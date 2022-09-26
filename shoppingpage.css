@@ -1,0 +1,72 @@
+#general{
+    display:grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-color: blueviolet;
+}
+#first{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: antiquewhite;
+    padding-left: 20px;
+}
+#second{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: rgb(219, 198, 170);
+    padding-left: 20px;
+}
+.sele{
+    display:flex;
+    justify-content: center;
+}
+.sele1{
+    display:flex;
+    justify-content: center;
+}
+.choice{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 30px;
+    border-bottom-style:solid ;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
+    width:90%;
+    height:200px;
+    text-align:left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    width:25%;
+    height:90%
+}
+.lastprocess{
+    display:list-item;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+#thenum{
+    display:flex;
+    justify-content: space-around;
+}
+.thenum1{
+    display:flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.payment{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:420px;
+    padding-top: 30px;
+}
+.formcode{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

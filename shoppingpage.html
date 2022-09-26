@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="shoppingpage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/634e590734.js" crossorigin="anonymous"></script>
+    <title>shoppingcart</title>
+</head>
+<body id="general">
+    <div id="first">
+        <div class="choice">
+            <h1>Shopping cart</h1>
+            <a href="#" class="btn btn-secondary disabled"
+             tabindex="-1" role="button" aria-disabled="true">filter by title</a>
+        </div>
+        <div class="choice">
+            <img src="sac1.jpg">
+            <div class="sele">
+                <button class="plus">+</button>
+                <p class="number">0</p>
+                <button class="minus">-</button>
+            </div>
+            <div class="sele1">
+                <p>Price : </p>
+                <p class="price">1800</p>
+                <p>$</p>
+            </div>
+        </div>
+        <div class="choice">
+            <img src="sac2.jpg">
+            <div class="sele">
+                <button class="plus">+</button>
+                <p class="number">0</p>
+                <button class="minus">-</button>
+            </div>
+            <div class="sele1">
+                <p>Price : </p>
+                <p class="price">2100</p>
+                <p>$</p>
+            </div>
+        </div>
+        <div class="choice">
+            <img src="sac3.jpg">
+            <div class="sele">
+                <button class="plus">+</button>
+                <p class="number">0</p>
+                <button class="minus">-</button>
+            </div>
+            <div class="sele1">
+                <p>Price : </p>
+                <p class="price">1500</p>
+                <p>$</p>
+            </div>
+        </div>
+        <div class="choice">
+            <div>
+                <i class="fa-regular fa-backward"></i>
+                <p>back to shop</p>
+            </div>
+        </div>
+    </div>
+    <div id="second">
+        <div class="choice">
+            <h3>Summary</h3>
+        </div> 
+        <div class="payment">
+            <div id="thenum">
+                <div class="thenum1">
+                    <h5>Number of Items :</h5>
+                    <h5 id="nItems">0</h5>
+                </div>
+                <div class="thenum1">
+                    <h5 id="fprice">0</h5>
+                    <h5> $</h5>
+                </div>
+            </div>
+            <div class="lastprocess">
+                <h3>Shipping</h3>
+                <select id="selection">
+                    <option value="">--Select delivery mode--</option>
+                    <option value="s">--Standard (5$)--</option>
+                    <option value="e">--Express delivery (15$)--</option>
+                    <option value="i">--International shipping (35$)--</option>
+                </select>
+            </div>
+            <div class="lastprocess">               
+                    <label for="code"><h4 class="formcode">give code</h4></label>
+                    <div>
+                      <input type="text" required maxlength="8" size="10" id="writtencode">
+                      <button id="givecode">submit</button>  
+                    </div>             
+            </div>
+            <div class="lastprocess">
+                <div class="thenum1">
+                    <h4>Total price : </h4>
+                    <h4 id="finalprice">0</h4>
+                    <h4> $</h4>
+                </div>
+                <button type="button" class="btn btn-dark">Register</button>
+            </div>
+        </div>
+    </div>
+   <script src="shoppingpage.js"></script> 
+</body>
+</html>
