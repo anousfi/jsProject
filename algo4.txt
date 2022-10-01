@@ -1,0 +1,16 @@
+Insertion sort 
+
+VAR tab : ARRAY_OF Integer;
+VAR i,j,tampon1,tampon2 : Integer;
+
+BEGIN
+  FOR i FROM 0 TO tab.length-1 STEP 1 DO 
+      FOR j FROM i TO tab.length-1 STEP 1 DO
+         IF (tab[j+1]<tab[j]) DO 
+         tampon2:=tab[j];
+         tab[j]:=tab[j+1];
+         tab[j+1]:=tampon2;
+         ENDIF
+      ENDFOR
+  ENDFOR
+END
