@@ -1,0 +1,32 @@
+VAR tab1;tab2 :ARRAY_OF INTEGER
+VAR condition=false : BOOLEAN
+VAR somme=0;i=0 INTEGER
+ 
+
+BEGIN
+FOR i FROM 0 TO tab1.length STEP 1 DO 
+  somme+=tab1[i]*tab2[i]
+  ENDFOR
+  IF (somme!==0) condition=true
+  ENDIF
+Write (somme)
+If (condition) Write ("the two vectors are orthogonals")
+ENDIF
+END 
+
+Function dotProduct(tab1,tab2) {
+    FOR i FROM 0 TO tab1.length STEP 1 DO 
+    somme+=tab1[i]*tab2[i]
+    ENDFOR
+    return somme;
+}
+
+Function orthrogonal(tab1,tab2) {
+    return (dotProduct(tab1,tab2)==0)
+}
+
+BEGIN
+Write("the scalar product of the two vectors is:" +dotProduct(tab1,tab2))
+IF (orthogonal(tab1,tab2)) Write ("the two vectors are orthogonals")
+END
+
