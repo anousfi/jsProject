@@ -7,8 +7,8 @@ BEGIN
   FOR i FROM 1 TO tab.length-1 STEP 1 DO 
       tampon1=tab[i]
       j:=i-1
-         While (tab[j]<tab[j+1]) DO 
-         tab[j]:=tab[j+1];
+         While (tab[j]<tampon1) DO 
+         tab[j+1]:=tab[j];
          j--;
          ENDWHILE
          tab[j+1]:=tampon1
