@@ -4,13 +4,15 @@ VAR tab : ARRAY_OF Integer;
 VAR i,j,tampon1,tampon2 : Integer;
 
 BEGIN
-  FOR i FROM 0 TO tab.length-1 STEP 1 DO 
-      FOR j FROM i TO tab.length-1 STEP 1 DO
-         IF (tab[j+1]<tab[j]) DO 
+  FOR i FROM 1 TO tab.length-1 STEP 1 DO 
+      tampon1=tab[i]
+      j:=i-1
+         While (tab[j]<tampon1) DO 
          tampon2:=tab[j];
          tab[j]:=tab[j+1];
          tab[j+1]:=tampon2;
-         ENDIF
+         ENDWHILE
+         tab[j+1]:=tampon1
       ENDFOR
   ENDFOR
 END
